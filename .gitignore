@@ -1,4 +1,8 @@
 models/*
 results/*
 uploads/*
-.venv/*
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.github/
