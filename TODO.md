@@ -18,7 +18,7 @@ This is a **screen-to-text OCR tool** that lets you:
 - Click and drag to select the region containing text
 - The tool captures the selected area, sends it to the OCR API, and copies the recognized text to your clipboard
 - Alternatively, pass an image file path: `ocr image.png` to OCR a saved image
-- If not installed, run directly: `python3 ocr.py` or `./ocr.py`
+- If not installed, run directly: `python3 ocr.py` or `./ocr.py` (after `chmod +x ocr.py`)
 
 ### Server (`ocr_api_allinone.py`)
 - FastAPI server that receives images via `POST /infer`
