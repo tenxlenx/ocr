@@ -14,10 +14,11 @@ This is a **screen-to-text OCR tool** that lets you:
 ## How It Works
 
 ### Client (`ocr.py`)
-- Run `ocr` (no arguments) to launch an interactive screen selector
+- Run `ocr` (no arguments) to launch an interactive screen selector (assumes `ocr.py` is installed as `ocr` in your PATH)
 - Click and drag to select the region containing text
 - The tool captures the selected area, sends it to the OCR API, and copies the recognized text to your clipboard
 - Alternatively, pass an image file path: `ocr image.png` to OCR a saved image
+- If not installed, run directly: `python3 ocr.py` or `./ocr.py`
 
 ### Server (`ocr_api_allinone.py`)
 - FastAPI server that receives images via `POST /infer`
@@ -28,12 +29,16 @@ This is a **screen-to-text OCR tool** that lets you:
 ## Example Workflow
 
 ```bash
-# Interactive screen selection
+# Interactive screen selection (if installed in PATH)
 ocr
 # (Select region with mouse, text appears on screen and in clipboard)
 
 # Or process a saved image
 ocr document.png
+
+# If not installed, use:
+python3 ocr.py
+python3 ocr.py document.png
 ```
 
 ## Future Improvements
