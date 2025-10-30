@@ -1,0 +1,8 @@
+requests
+Pillow
+mss
+pyperclip
+langdetect
+pygments
+black
+autopep8
