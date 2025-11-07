@@ -6,6 +6,7 @@ A tiny, Dockerized **FastAPI** server around the Hugging Face model **`Jalea96/D
 * **streams raw text** (`text/plain`) as the model emits it (use `curl -N`)
 * is configurable entirely via a **`.env`** file (port, model, dtype, preset, etc.)
 * ships a lightweight **client CLI** (`ocr`) that can send an image *or* let you **draw a screen region across any monitor** and stream the OCR text
+* When you run **ocr** it let's you select an area on your screen which is sent to the model - you will get the response streamed in terminal then on your clipboard.
 
 Hardware target: NVIDIA GPU with CUDA 13.0+ (Docker base: `nvidia/cuda:13.0.1-cudnn-runtime-ubuntu22.04`) and **PyTorch cu130** wheels.
 
